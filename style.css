@@ -1,0 +1,197 @@
+body{
+ 
+}
+
+/* Nav Style */
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+.menu{
+    display: flex;
+    width: 66%;
+}
+nav img{
+    height:50px;
+    padding-left: 10px;
+    
+}
+ul {
+    
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 6%;
+  overflow: hidden;
+  background-color: #ffffff;
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+li {
+  float: left; 
+  
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+li a:visited { 
+ text-decoration: none; 
+ color: black; 
+}
+
+li a:hover {
+  background-color: #2e92d8;
+  color:white;
+}
+
+#sign-in-button{
+    margin-right: 5%;
+    padding: 20px 20px 20px 20px;
+    text-decoration: none;
+    font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #2e92d8;
+    color: white;
+    border-radius: 15px;
+}
+
+#sign-in-button:hover{
+    background-color: #75c1f8;
+}
+
+/* header style */
+
+#banner-logo{
+    margin-top: 1%;
+    background-image: url(./images/home-banner.jpg);
+    background-size: cover;
+    padding: 350px;
+}
+
+#banner-logo img{
+    display: block;
+     margin-left: 15%;
+    width: auto;
+    height: 300px;
+    position: absolute;
+    top: 24%;
+}
+
+
+#banner-logo h1 {
+  width: 100%;
+  text-align: center;
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 60px;
+  color: white;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 4px 4px black;
+}
+
+/* main style */
+
+.vob{
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+}
+
+.vob p{
+    font-size: 20px;
+}
+.p-grid{
+    width: 33%;
+    font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 18px;
+    padding: 10px;
+}
+
+
+#truck img{
+    width: 30%;
+    margin-left: 150px;
+}
+
+#truck>.p-grid{
+    margin-left: 100px;
+}
+
+.vob a{
+    width: 100%;
+    text-decoration: none;
+    color: #2e92d8;
+    font-size: 30px;
+    margin-left: 15%;
+}
+
+/* scrolling reviews style */
+
+.Testimonials{
+    text-align: center;
+    padding-top: 4%;
+    font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #2e92d8;
+    font-size: 30px;
+}
+
+.image-group{
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    margin-top: 25px;
+}
+.image-group img{
+    padding-right: 20px;
+    margin-right: 20px;
+    height: 150px;
+  animation: moveRight 120s linear infinite;
+
+}
+
+@keyframes moveRight {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes moveLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(100%); }
+}
+
+.image-group img:hover{
+    height: 165px;
+    transition: 1.5s;
+}
+
+.image-group-b{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+.image-group-b img{
+    
+    margin-right: 20px;
+    padding-right: 20px;
+    height: 150px;
+   animation: moveLeft 120s linear infinite; 
+
+}
+
+
+.image-group-b img:hover{
+    height: 165px;
+    transition: 1.5s;
+}
+
